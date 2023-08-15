@@ -1,6 +1,6 @@
 import { students } from "../model/modelStudents.js";
 import { studentsViewList } from "../view/viewStudents.js";
-import { insertTitleLIst } from "../view/viewStudents.js";
+import { insertTitleList } from "../view/viewStudents.js";
 
 const buttonCall = document.getElementById("btnListar");
 
@@ -19,5 +19,5 @@ buttonCall.addEventListener("click", () =>{
     const response = getListStudents(students);
     //console.log(response);
     studentsViewList(response);
-    insertTitleLIst();
+    insertTitleList();
 });
